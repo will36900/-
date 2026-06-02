@@ -1,0 +1,52 @@
+{
+  "games": [
+    {
+      "name": "Example Game",
+      "process_names": [
+        "game.exe",
+        "ExampleGame.exe"
+      ],
+      "thresholds": {
+        "low_average_fps": 45,
+        "low_1pct_fps": 30
+      }
+    }
+  ],
+  "sample_interval_seconds": 2,
+  "history_minutes": 5,
+  "reports_dir": "reports",
+  "presentmon": {
+    "enabled": false,
+    "executable_path": "",
+    "csv_path": "",
+    "arguments": [
+      "--process_name",
+      "{process_name}",
+      "--output_file",
+      "{csv_path}"
+    ]
+  },
+  "hardware": {
+    "enable_nvml": true,
+    "enable_libre_hardware_monitor": true
+  },
+  "windows_events": {
+    "enabled": true,
+    "max_events": 40,
+    "lookback_minutes_when_start_unknown": 10
+  },
+  "thresholds": {
+    "system_memory_percent": 90,
+    "process_cpu_percent": 85,
+    "process_memory_mb": 8192,
+    "disk_busy_percent": 80,
+    "low_average_fps": 45,
+    "low_1pct_fps": 30,
+    "stutter_frame_time_ms": 50,
+    "stutter_count": 5,
+    "gpu_load_percent": 95,
+    "gpu_temperature_c": 85,
+    "gpu_vram_percent": 90,
+    "gpu_power_percent": 95
+  }
+}
