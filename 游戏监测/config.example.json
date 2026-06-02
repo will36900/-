@@ -1,0 +1,16 @@
+{
+  "games": [
+    {
+      "name": "Example Game",
+      "process_names": ["game.exe", "ExampleGame.exe"]
+    }
+  ],
+  "sample_interval_seconds": 2,
+  "history_minutes": 5,
+  "thresholds": {
+    "system_memory_percent": 90,
+    "process_cpu_percent": 85,
+    "process_memory_mb": 8192,
+    "disk_busy_percent": 80
+  }
+}
